@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlainAVPlayerViewController">
+            <connections>
+                <outlet property="sizeLabel" destination="FOY-Ry-tLO" id="4gp-Q9-7v7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resolution" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOY-Ry-tLO">
+                    <rect key="frame" x="20" y="30" width="280" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="bkD-lw-C65"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFp-nq-S57">
+                    <rect key="frame" x="320" y="30" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="QkK-IK-mIs"/>
+                        <constraint firstAttribute="height" constant="35" id="k1P-c4-ygq"/>
+                    </constraints>
+                    <state key="normal" image="close_button"/>
+                    <connections>
+                        <action selector="closeButtonTapped:" destination="-1" eventType="touchUpInside" id="cNY-Ja-hsq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xFp-nq-S57" firstAttribute="leading" secondItem="FOY-Ry-tLO" secondAttribute="trailing" constant="20" id="5rI-bA-zAM"/>
+                <constraint firstItem="FOY-Ry-tLO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="6Az-l2-a10"/>
+                <constraint firstItem="FOY-Ry-tLO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="8CS-Af-aPe"/>
+                <constraint firstAttribute="trailing" secondItem="xFp-nq-S57" secondAttribute="trailing" constant="20" id="8pz-KX-hw8"/>
+                <constraint firstItem="xFp-nq-S57" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="ldJ-Nf-ix7"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="close_button" width="35" height="35"/>
+    </resources>
+</document>
