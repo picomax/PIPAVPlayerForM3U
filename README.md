@@ -1,4 +1,4 @@
-# Sample for VideoPlayer
+# Sample for PIP VideoPlayer
 ## Picture In Picture Sample (using AVPlayer)
 
 This is a sample application for learning media player for iOS.
